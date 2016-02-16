@@ -1,6 +1,6 @@
 {
   "name": "sass-dry",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "DRY your SASS code.",
   "author": "Nicolas Gryman <ngryman@gmail.com> (https://github.com/ngryman)",
   "license": "MIT",
