@@ -1,0 +1,20 @@
+@import 'lib/settings';
+@import 'lib/placeholders';
+
+///
+@mixin dry($id, $enabled: $dry-enabled) {
+  @if $enabled {
+    $placeholder-id: -dry-placeholders-get($id);
+
+    @if null == $placeholder-id {
+      $placeholder-id: -dry-placeholders-set($id);
+      // XXX: adding quotes for linter, waiting: https://github.com/sasstools/sass-lint/issues/532
+      @at-root '%#{$placeholder-id}' { @content; }
+    }
+
+    @extend '%#{$placeholder-id}';
+  }
+  @else {
+    @content;
+  }
+}

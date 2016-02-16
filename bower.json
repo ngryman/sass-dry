@@ -1,0 +1,33 @@
+{
+  "name": "sass-dry",
+  "description": "DRY your SASS code.",
+  "authors": "Nicolas Gryman <ngryman@gmail.com> (https://github.com/ngryman)",
+  "main": "_dry.scss",
+  "license": "MIT",
+  "ignore": [
+    "docs",
+    "node_modules",
+    "test",
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    ".sass-lint.yml",
+    ".sassdocrc",
+    ".travis.yml"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngryman/sass-dry"
+  },
+  "keywords": [
+    "dry",
+    "dryer",
+    "dynamic extend",
+    "dynamic placeholder",
+    "extend",
+    "factorize",
+    "mixin",
+    "placeholder",
+    "sass"
+  ]
+}

@@ -1,0 +1,14 @@
+# projects
+docs
+
+# node
+node_modules
+npm-debug.log
+
+# OS
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes

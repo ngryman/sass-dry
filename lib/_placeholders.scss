@@ -1,0 +1,20 @@
+// ///
+// /// @type map
+// ///
+$-dry-placeholders: ();
+
+///
+/// @param {string | number}
+///
+@function -dry-placeholders-set($id) {
+  $uid: unique-id();
+  $-dry-placeholders: map-merge($-dry-placeholders, ($id: $uid)) !global;
+  @return $uid;
+}
+
+///
+/// @param {string | number}
+///
+@function -dry-placeholders-get($id) {
+  @return map-get($-dry-placeholders, $id);
+}

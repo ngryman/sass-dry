@@ -1,0 +1,43 @@
+{
+  "name": "sass-dry",
+  "version": "0.0.0",
+  "description": "DRY your SASS code.",
+  "author": "Nicolas Gryman <ngryman@gmail.com> (https://github.com/ngryman)",
+  "license": "MIT",
+  "repository": "ngryman/sass-dry",
+  "files": [
+    "_dry.scss",
+    "lib/"
+  ],
+  "scripts": {
+    "lint": "# waiting: https://github.com/sasstools/sass-lint/issues/495 | sass-lint -vq",
+    "doc": "sassdoc . docs -v",
+    "spec": "mocha",
+    "test": "npm run lint -s && npm run spec -s",
+    "watch": "npm test; onchange {.,**}/*.scss -- npm test"
+  },
+  "keywords": [
+    "dry",
+    "dryer",
+    "dynamic extend",
+    "dynamic placeholder",
+    "extend",
+    "factorize",
+    "mixin",
+    "placeholder",
+    "sass"
+  ],
+  "dependencies": {
+    "sassdoc": "~1.10.3"
+  },
+  "devDependencies": {
+    "ava": "^0.11.0",
+    "mocha": "^2.4.5",
+    "onchange": "^2.0.0",
+    "sass-lint": "^1.5.0",
+    "sass-true": "^2.0.3"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}

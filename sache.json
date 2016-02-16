@@ -1,0 +1,15 @@
+{
+  "name": "sass-dry",
+  "description": "DRY your SASS code.",
+  "tags": [
+    "dry",
+    "dryer",
+    "dynamic extend",
+    "dynamic placeholder",
+    "extend",
+    "factorize",
+    "mixin",
+    "placeholder",
+    "sass"
+  ]
+}

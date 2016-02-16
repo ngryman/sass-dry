@@ -1,0 +1,8 @@
+///
+///
+$dry: () !default;
+
+///
+@mixin dry-set($setting, $value) {
+  $dry: map-merge($dry, ($setting: $value)) !global;
+}

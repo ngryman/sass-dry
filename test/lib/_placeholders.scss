@@ -1,0 +1,26 @@
+@import '../../lib/placeholders';
+
+@include test-module('Placeholders') {
+  $first-uid: '';
+
+  @include test('adds a placeholder') {
+    $uid: -dry-placeholders-set(class);
+    $first-uid: $uid;
+
+    @include assert-equal(str-length($uid), 9);
+    @include assert-equal(length($-dry-placeholders), 1);
+  }
+
+  @include test('gets an existing placeholder') {
+    $uid: -dry-placeholders-get(class);
+    $first-uid: $uid;
+
+    @include assert-equal($uid, $first-uid);
+  }
+
+  @include test('returns null if no placeholder is found') {
+    $uid: -dry-placeholders-get(notfound);
+
+    @include assert-equal($uid, null);
+  }
+}
