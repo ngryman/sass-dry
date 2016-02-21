@@ -1,6 +1,13 @@
 ///
 ///
-$dry: () !default;
+$dry: (
+  enabled: true
+) !default;
+
+///
+@function dry-get($setting, $value) {
+  @return map-get($dry, enabled)
+}
 
 ///
 @mixin dry-set($setting, $value) {

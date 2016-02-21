@@ -2,7 +2,7 @@
 @import 'lib/placeholders';
 
 ///
-@mixin dry($id, $enabled: $dry-enabled) {
+@mixin dry($id, $enabled: dry-get($dry, enabled)) {
   @if $enabled {
     $placeholder-id: -dry-placeholders-get($id);
 
