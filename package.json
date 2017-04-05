@@ -28,7 +28,7 @@
     "sass"
   ],
   "devDependencies": {
-    "ava": "^0.18.1",
+    "ava": "^0.19.0",
     "mocha": "^3.2.0",
     "onchange": "^3.0.2",
     "sassdoc": "~2.2.0",
