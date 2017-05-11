@@ -1,5 +1,7 @@
 # sass-dry [![travis][travis-image]][travis-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngryman/sass-dry.svg)](https://greenkeeper.io/)
+
 [travis-image]: https://img.shields.io/travis/ngryman/sass-dry.svg?style=flat
 [travis-url]: https://travis-ci.org/ngryman/sass-dry
 
