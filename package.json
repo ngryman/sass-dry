@@ -33,7 +33,7 @@
     "onchange": "^3.0.2",
     "sassdoc": "~2.2.0",
     "sass-lint": "^1.5.0",
-    "sass-true": "^2.0.3"
+    "sass-true": "^3.0.1"
   },
   "engines": {
     "node": ">=4"
